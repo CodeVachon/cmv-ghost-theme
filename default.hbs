@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html itemscope itemtype="http://schema.org/Article">
 <head>
     {{! Document Settings }}
     <meta charset="utf-8" />
@@ -8,6 +8,24 @@
     {{! Page Meta }}
     <title>{{meta_title}}</title>
     <meta name="description" content="{{meta_description}}" />
+
+    <meta itemprop="name" content="{{meta_title}}">
+    <meta itemprop="description" content="{{meta_description}}">
+    {{#if @blog.logo}}<meta itemprop="image" content="{{@blog.url}}{{@blog.logo}}">{{/if}}
+
+    <meta name="twitter:card" value="summary">
+    <meta name="twitter:site" content="@liaodrake">
+    <meta name="twitter:title" content="{{meta_title}}">
+    <meta name="twitter:description" content="{{meta_description}}">
+    <meta name="twitter:creator" content="@liaodrake">
+    {{#if @blog.logo}}<meta name="twitter:image" content="{{@blog.url}}{{@blog.logo}}">{{/if}}
+
+    <meta property="og:title" content="{{meta_title}}" />
+    <meta property="og:site_name" content="{{@blog.title}}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{@blog.url}}" />
+    {{#if @blog.logo}}<meta property="og:image" content="{{@blog.url}}{{@blog.logo}}" />{{/if}}
+    <meta property="og:description" content="{{meta_description}}" />
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
