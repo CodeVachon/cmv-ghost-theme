@@ -684,6 +684,26 @@ body.nav-opened .nav {
     color: #fff;
 }
 
+.social {
+    text-align: center;
+    margin: 0;
+}
+.social li {
+    display: inline-block;
+    padding: 0 0.5rem;
+}
+.social a {
+    font-size: 2rem;
+    text-decoration: none;
+}
+.site-footer .social a:hover {
+    color: #7b99a6;
+    border-bottom: none;
+}
+.social .label {
+    display: none;
+}
+
 .subscribe-button {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1047,6 +1067,7 @@ body:not(.post-template) .post-title {
 .comments {
     border-top: 1px #EBF2F6 solid;
     margin: 3em 0 0 0;
+    padding: 1em 0 0 0;
     position: relative;
 }
 .comments .dot {
