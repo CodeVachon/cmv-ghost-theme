@@ -1044,6 +1044,24 @@ body:not(.post-template) .post-title {
    5. Single Post - When you click on an individual post
    ========================================================================== */
 
+.comments {
+    border-top: 1px #EBF2F6 solid;
+    margin: 3em 0 0 0;
+    position: relative;
+}
+.comments .dot {
+    border: 1px #E7EEF2 solid;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin-left: -20px;
+}
+
 .post-template .post-header {
    margin-bottom: 3.4rem;
 }
